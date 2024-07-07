@@ -19,6 +19,10 @@ TagManager:
   - obstacle2
   - Obstacle5
   - obstacle6
+  - Play
+  - Quit
+  - LeaderBoard
+  - Settings
   layers:
   - Default
   - TransparentFX

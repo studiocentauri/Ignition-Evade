@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/Main Menu.unity
     guid: ca9ef673f2ab1e44ba63e2444a465f7d
   - enabled: 1
+    path: Assets/Scenes/Dynamic Main Menu.unity
+    guid: 83c400681571ebd4aae729a20af42e72
+  - enabled: 1
     path: Assets/Scenes/Level Selector.unity
     guid: 34f7ad9b853e2934394f13658d1922ea
   - enabled: 1
