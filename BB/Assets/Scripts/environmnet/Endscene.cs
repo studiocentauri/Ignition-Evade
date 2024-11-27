@@ -47,14 +47,24 @@ public class Endscene : MonoBehaviour
         AddScore(new Score(username, timer.timer));
         }
         SaveScore();
+        if (MainMenuController.level == 0)
+        {
+            MainMenuController.level = 1;
+            Debug.Log(MainMenuController.level);
+            StartCoroutine(LoadLevel(8));
+        }
         if (MainMenuController.level == 1)
         {
+            MainMenuController.level = 2;
             StartCoroutine(LoadLevel(9));
         }
-        else
+        else if (MainMenuController.level == 2) { MainMenuController.level = 3; StartCoroutine(LoadLevel(10)); }
+        else if (MainMenuController.level == 3) { MainMenuController.level = 4; StartCoroutine(LoadLevel(11)); }
+        else if (MainMenuController.level == 4) { StartCoroutine(LoadLevel(12)); }
+        /*else
         {
             StartCoroutine(LoadLevel(12));
-        }
+        }*/
     }
 
     public void AddScore(Score score)
